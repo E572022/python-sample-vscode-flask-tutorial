@@ -60,13 +60,6 @@ stages:
       displayName: 'Upload package'
       artifact: drop
 
-    - script: |
-        pip install wheel
-        pip install twine
-
-    - script: |
-        python setup.py bdist_wheel
-
     - task: TwineAuthenticate@1
       inputs:
           artifactFeed: 'mmatapereira/teste'
