@@ -66,11 +66,9 @@ stages:
     - task: CmdLine@2
     inputs:
       script: 'python setup.py sdist bdist_wheel'
-
-
-- task: CmdLine@2
-inputs:
+    inputs:
       script: 'twine upload -r teste dist/*'
+
 
 
 - stage: Deploy
