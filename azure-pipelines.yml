@@ -63,10 +63,7 @@ stages:
       inputs:
           artifactFeed: 'mmatapereira/teste'
     - script : |
-        twine upload - r teste -- config file $(PYPRIC_PATH) dist /*
-    - task: CmdLine@2
-      inputs:
-        script: 'python setup.py sdist bdist_wheel'
+        python -m twine upload - r flash -- config file $(PYPRIC_PATH) dist /*.whl
 
 - stage: Deploy
   displayName: 'Deploy Web App'
