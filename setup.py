@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 setup(
     name='python-sample-vscode-flask-tutorial',
-    packages=['python-sample-vscode-flask-tutorial'],
+    packages=find_packages('src', exclude=['test']),
     description='teste',
     version='0.1',
     url='https://mmatapereira@dev.azure.com/mmatapereira/mmatapereira/_git/mmatapereira',
