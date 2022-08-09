@@ -68,9 +68,6 @@ stages:
       script: 'python setup.py sdist bdist_wheel'
 
 
-- task: CmdLine@2
-inputs:
-        script: 'twine upload -r teste dist/*'
 
 
 
