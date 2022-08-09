@@ -59,6 +59,9 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       displayName: 'Upload package'
       artifact: drop
+    - task: TwineAuthenticate@1
+      inputs:
+          artifactFeed: 'mmatapereira/teste'
 
 - stage: Deploy
   displayName: 'Deploy Web App'
