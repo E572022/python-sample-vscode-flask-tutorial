@@ -62,8 +62,7 @@ stages:
     - task: TwineAuthenticate@1
       inputs:
           artifactFeed: 'mmatapereira/teste'
-    - script : |
-        twine upload - r teste -- config file $(PYPRIC_PATH) dist /*
+
 
 - stage: Deploy
   displayName: 'Deploy Web App'
