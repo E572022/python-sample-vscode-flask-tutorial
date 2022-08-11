@@ -63,6 +63,9 @@ stages:
     - task: TwineAuthenticate@1
       inputs:
           artifactFeed: 'mmatapereira/teste'
+    - task: CmdLine@2
+      inputs:
+        script: 'twine upload -r AzureTest23  --config-file $(PYPIRC_PATH) C:\Users\e572022\hello\python-sample-vscode-flask-tutorial\dist\*'
 
 - stage: Deploy
   displayName: 'Deploy Web App'
