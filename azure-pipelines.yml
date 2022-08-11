@@ -62,7 +62,7 @@ stages:
 
     - task: TwineAuthenticate@1
       inputs:
-          artifactFeed: 'mmatapereira/teste'
+          artifactFeed: 'mmatapereira/testar'
 
 - stage: Deploy
   displayName: 'Deploy Web App'
