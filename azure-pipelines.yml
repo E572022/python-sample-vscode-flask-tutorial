@@ -63,4 +63,3 @@ stages:
     - task: TwineAuthenticate@1
       inputs:
           artifactFeed: 'mmatapereira/testar'
-
