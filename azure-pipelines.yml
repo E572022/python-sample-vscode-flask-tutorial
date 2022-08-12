@@ -65,7 +65,7 @@ stages:
         pip install twine
 
     - script: |
-        python setup.py bdist_wheel
+        python setup.py bdist_wheel --version=$(Build.BuildId)
 
     - task: TwineAuthenticate@1
       inputs:
