@@ -73,3 +73,4 @@ stages:
 
     - script : |
         python -m twine upload -u m.mata.pereira@ctt.pt -p x2yp4vsnsjhzkrpeyytbvgnktg3oesl2z7x6rje5xfr35yrhngpa --repository-url  https://pkgs.dev.azure.com/mmatapereira/mmatapereira/_packaging/testar/pypi/upload/ dist/*
+    - task: PublishBuildArtifacts@1
