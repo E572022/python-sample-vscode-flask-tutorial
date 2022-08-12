@@ -2,7 +2,7 @@
 import os
 from distutils.command.register import register as register_orig
 from distutils.command.upload import upload as upload_orig
-from setuptools import setup
+
 
 
 class register(register_orig):
@@ -18,13 +18,14 @@ class upload(upload_orig):
 
 
 from setuptools import setup, find_packages
+import pkg_resources
 setup(
     name='python-sample-vscode-flask-tutorial',
     packages=find_packages('src', exclude=['test']),
     description='teste',
-    version='0.1',
+    version=pkg_resources.require("MyProject")[0].version,
     url='https://mmatapereira@dev.azure.com/mmatapereira/mmatapereira/_git/mmatapereira',
     author='Pereira, Miguel Pereira',
     author_email='m.mata.pereira@ctt.pt',
-    keywords=['por','favor','funciona']
+    keywords=['repirar','fundo','calma']
 )
