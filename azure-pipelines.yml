@@ -72,4 +72,4 @@ stages:
           artifactFeed: 'mmatapereira/testar'
 
     - script : |
-        python -m twine upload -u m.mata.pereira@ctt.pt -p x2yp4vsnsjhzkrpeyytbvgnktg3oesl2z7x6rje5xfr35yrhngpa --repository-url  https://pkgs.dev.azure.com/mmatapereira/mmatapereira/_packaging/testar/pypi/upload/ dist/*
+        python -m twine upload -u m.mata.pereira@ctt.pt -p uxoirxjd2ulbfi7cf6zcunm3sb2mtwppcskmh5vztex2qh5nkrpq --repository-url  https://pkgs.dev.azure.com/mmatapereira/mmatapereira/_packaging/testar/pypi/upload/ dist/*
